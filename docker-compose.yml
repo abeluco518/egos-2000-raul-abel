@@ -1,0 +1,12 @@
+services:
+  egos:
+    image: egos2000
+    platform: linux/amd64
+    build:
+      context: .
+    volumes:
+      - ./egos-2000:/egos
+    working_dir: /egos
+    tty: true
+    stdin_open: true
+    command: bash
